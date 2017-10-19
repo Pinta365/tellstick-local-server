@@ -1,8 +1,21 @@
 {
   "name": "tellstick-local-server",
-  "version": "0.0.2",
+  "version": "0.1.0",
   "description": "Node.js wrapper for the Tellstick ZNet local server API.",
   "main": "index.js",   
-  "author": "Pintapoff@GitHub",
-  "license": "MIT"
+  "author": "pintapoff (Pintapoff@GitHub)",
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "nodejs",
+    "tellstick",
+    "telldus",
+    "ZNet"
+    "server"
+    "api"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pintapoff/tellstick-local-server.git"     
+  }
 }
