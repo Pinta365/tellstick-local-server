@@ -1,6 +1,6 @@
 {
   "name": "tellstick-local-server",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node.js wrapper for the Tellstick ZNet local server API.",
   "main": "index.js",   
   "author": "Pintapoff@GitHub",
