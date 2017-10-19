@@ -10,8 +10,8 @@
     "nodejs",
     "tellstick",
     "telldus",
-    "ZNet"
-    "server"
+    "ZNet",
+    "server",
     "api"
   ],
   "repository": {
