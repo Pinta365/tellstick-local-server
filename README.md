@@ -1,5 +1,5 @@
 # tellstick-local-server
-A node.js wrapper for the Tellstick ZNet local server API.
+A node.js promise based wrapper for the Tellstick ZNet local server API.
 
 NOTICE - You need to retrieve your own application token from the ZNet local server before you can use the API wrapper. See basic instructions further down.
 
@@ -16,12 +16,15 @@ const config = {ip: '192.168.1.111',
 				bearerToken: 'eyJhbGciOiJIMTM..........ZSwidHUzxkS9BRqY'}
 const device = new api.device(config);
 
-device.list(function(err, data){
-	if(err){
-		return console.log(err);
-	}
-	console.log(data);
-});
+async function listDevices(){
+  try {
+        console.log(await device.list());
+    } catch(err) {
+        console.log(err);
+    } 
+}
+
+listDevices();
 ```
 
 List all sensors along with a parameter to include latest values.
@@ -33,12 +36,15 @@ const sensor = new api.sensor(config);
 
 const params = { includeValues: 1 }
 
-sensor.list(params, function(err, data){
-	if(err){
-		return console.log(err);
-	}
-	console.log(data);
-});
+async function listSensors(){
+  try {
+        console.log(await sensor.list(params));
+    } catch(err) {
+        console.log(err);
+    } 
+}
+
+listSensors();
 ```
 
 ### Supported API-calls
